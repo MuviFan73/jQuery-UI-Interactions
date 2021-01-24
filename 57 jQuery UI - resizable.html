@@ -1,0 +1,33 @@
+
+
+
+<html>
+    <head>
+        <title>57 jQuery UI - Interaction</title>
+        <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel = "stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+        <body>
+            <div id="mydiv">
+                <h3>jQuery UI - Interaction</h3>
+                  <img id="resize" src="1.jpg" alt=""></img>
+            
+            </div>
+
+
+        </body>
+        
+        <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+        <script>
+            $("#resize").resizable({
+                maxwidth:300,
+                //maxheight:700,
+                autohide:true,
+                distance:50,
+                ghost:true,
+                aspectRatio:true,
+
+            });
+        </script>
+</html> 

@@ -1,0 +1,35 @@
+
+<html>
+    <head>
+        <title>55 jQuery UI - Interaction</title>
+        <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel = "stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+        <body>
+            <div id="mydiv">
+                <h3>jQuery UI - Interaction</h3>
+            </div>
+
+            <div style="border: 1px solid black;">
+                <div class="cube"><h3>CUBE 1</h3></div>
+                <div class="cube"><h3>CUBE 2</h3></div>
+            </div>
+
+
+        </body>
+        
+        <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+        <script>
+            $(".cube").draggable({
+                //axis: "y",
+                //containment:"parent",
+                containment:"document",
+                cursor:"grabbing",
+                opacity:0.5,
+                //grid: [300][300],
+                snap: true,
+                snapTolerance:20
+            });
+        </script>
+</html> 

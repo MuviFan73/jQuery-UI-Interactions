@@ -1,0 +1,34 @@
+
+
+<html>
+    <head>
+        <title>55 jQuery UI - Interaction</title>
+        <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel = "stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+        <body>
+            <div id="mydiv">
+                <h3>jQuery UI - Interaction</h3>
+                
+                <div class="cube"><h3>CUBE 1</h3></div>
+                <div class="cube"><h3>CUBE 2</h3></div>
+                <div class="cube"><h3>CUBE 3</h3></div>
+            
+            </div>
+
+
+        </body>
+        
+        <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+        <script>
+            $("#mydiv").sortable({
+               opacity:0.5,
+               distance:50,
+               //delay:300,
+               //containment:"parent",
+               cursor:"grabbing",
+               //axis:"x",
+            });
+        </script>
+</html> 
